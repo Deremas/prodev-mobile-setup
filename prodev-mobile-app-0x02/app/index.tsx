@@ -1,4 +1,12 @@
-import { Text, View, StyleSheet, Image, ImageBackground, Dimensions, TouchableOpacity } from "react-native";
+import {
+  Text,
+  View,
+  StyleSheet,
+  Image,
+  ImageBackground,
+  Dimensions,
+  TouchableOpacity,
+} from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function Index() {
@@ -16,7 +24,9 @@ export default function Index() {
             </View>
 
             <View style={styles.textGroup}>
-              <Text style={styles.textLarge}>Find your favorite place here</Text>
+              <Text style={styles.textLarge}>
+                Find your favorite place here
+              </Text>
               <Text style={styles.textSmall}>The best prices for over 2</Text>
               <Text style={styles.textSmall}>million properties worldwide</Text>
             </View>
@@ -24,7 +34,9 @@ export default function Index() {
             <View style={{ position: "absolute", bottom: 0, width: "100%" }}>
               <View style={styles.buttonGroup}>
                 <TouchableOpacity style={styles.button}>
-                  <Text style={{ ...styles.textSmall, color: "black" }}>Join here</Text>
+                  <Text style={{ ...styles.textSmall, color: "black" }}>
+                    Join here
+                  </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.transparentButton}>
                   <Text style={styles.textSmall}>Sign In</Text>
@@ -43,11 +55,32 @@ export default function Index() {
 
 const styles = StyleSheet.create({
   container: { flex: 1 },
-  background: { flex: 1, justifyContent: "center", width: "100%", height: Dimensions.get("window").height },
-  companyLogo: { width: "100%", alignItems: "center", padding: 20, marginBottom: 50 },
+  background: {
+    flex: 1,
+    justifyContent: "center",
+    width: "100%",
+    height: Dimensions.get("window").height,
+  },
+  companyLogo: {
+    width: "100%",
+    alignItems: "center",
+    padding: 20,
+    marginBottom: 50,
+  },
   textGroup: { alignItems: "center" },
-  textLarge: { color: "white", fontWeight: "800", fontSize: 40, textAlign: "center", marginBottom: 12 },
-  textSmall: { color: "white", fontSize: 18, fontWeight: "200", textAlign: "center" },
+  textLarge: {
+    color: "white",
+    fontWeight: "800",
+    fontSize: 40,
+    textAlign: "center",
+    marginBottom: 12,
+  },
+  textSmall: {
+    color: "white",
+    fontSize: 18,
+    fontWeight: "200",
+    textAlign: "center",
+  },
   transparentButton: {
     borderColor: "white",
     borderWidth: 2,
