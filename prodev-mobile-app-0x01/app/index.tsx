@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
+    <Text>Entry Screen - Awesome</Text>
     <View style={styles.container}>
       <Text style={styles.largeText}>
         Typescript is great if you practice more
