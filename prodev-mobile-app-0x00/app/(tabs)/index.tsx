@@ -19,7 +19,7 @@ export default function HomeScreen() {
       }
     >
       <ThemedView style={styles.titleContainer}>
-        <Text type="title">First App Created</Text>
+        <Text type="title">** First App Created **</Text>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
